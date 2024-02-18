@@ -16,10 +16,12 @@ void setup() {
   radarServo.attach(7); // Defines on which pin is the servo motor attached
   baseServo.attach(4);
   bandServo.attach(2);
+  bandServo.write(5);
+  delay(10000);
 }
 
-bandServo.write(5);
-delay(10000);
+
+
 void loop() {
   // rotates the servo motor from 15 to 165 degrees
   for(int i=15;i<=165;i++){  
