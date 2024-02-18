@@ -54,20 +54,20 @@ nav ul li a:hover{
 .information{
     position: absolute;
     top: 50%;
-    left: 9%;
+    left: 5%;
     transform: translateY(-50%);
 }
 
 h1{
     color: white; 
     margin: 20px -3px 20px; 
-    font-size: 95px;
+    font-size: 65px;
 }
 
 h3{
     color: white; 
     margin-bottom: 50px;
-    font-size: 55px;
+    font-size: 35px;
 }
 
 h4{
