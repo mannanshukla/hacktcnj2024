@@ -1,23 +1,252 @@
 * {
+    padding: 0; 
     margin: 0;
-    padding: 0;
+    font-family: 'Courier New', Courier, monospace;
+    box-sizing: border-box; 
 }
 
-body{
-    background-color: rgb(216, 164, 199);
+.top{
+    height: 100vh; 
+    width: 100%; 
+    background: #e03f44; 
+    background-size: cover;
+    background-position: center;
 }
-
-.navbar{
-    padding: 30px;
-    background-color: green;
+nav{
+    display: flex; 
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 32px; 
+    padding-left: 8%; 
+    padding-right: 8%;
 }
-
 .name{
-    margin: 10px;
-    font-size: 40px;
-
+    color: white;
+    font-size: 35px;
+    letter-spacing: 0px;
+    cursor: pointer;
 }
 
+nav ul li{
+    list-style-type: none;
+    display: inline-block;
+    padding: 10px 10px;
+    
+}
+nav ul li a{
+    background-color: red;
+    color:white;    
+    text-decoration: none;
+    border: 2px solid transparent;
+    font-weight: bold;
+    padding: 10px 25px; 
+    border-radius: 30px;
+    cursor: pointer;
+    transition: background-color 1s, 
+        color 1s; 
+}
+
+nav ul li a:hover{
+    background-color: white;
+    color: red; 
+}
+
+.information{
+    position: absolute;
+    top: 50%;
+    left: 9%;
+    transform: translateY(-50%);
+}
+
+h1{
+    color: white; 
+    margin: 20px -3px 20px; 
+    font-size: 95px;
+}
+
+h3{
+    color: white; 
+    margin-bottom: 50px;
+    font-size: 55px;
+}
+
+h4{
+    color: black;  
+    font-size: 35px;
+}
 img{
+    max-width: 90%;
+    max-height: 90%;
+}
+.image1{
+    height: 600px;
+    width: 500px;
+    position: relative;
+    right: 350px;
+    top: 100px;
+    float: right;
+}
+
+.image2{
+    height: 600px;
+    width: 500px; 
+    position: relative; 
+    left: 1000px;
+    top: 200px;
+}
+
+.about{
+    width: 100%;
+    padding: 100px 0px;
+    background-color: 	#bfbfbf;
+}
+
+.about img{
+    height: auto;
+    width: 430px;
+}
+
+.about-text{
+    width: 550px;
+}
+
+.main{
+    width: 1130px;
+    max-width: 95%;
+    margin: 10px 200px 210px;
+    display: flex; 
+    align-items: center; 
+    justify-content: space-around;
+}
+
+.about-text h2{
+    color: white;
+    font-size: 75px;
+    text-transform: capitalize;
+    margin-bottom: 20;
+}
+
+.about-text h5{
+    color: white;
+    letter-spacing: 1px;
+    font-size: 22px;
+    margin-bottom: 25px;
+    text-transform: capitalize;
+}
+
+.about-text p{
+    color:black;
+    letter-spacing: 1px;
+    line-height: 28px;
+    font-size: 20px;
+    margin-bottom: 45px;
+}
+
+
+.button{
+    background-color: gray;
+    text-align: center;
+    color:white;    
+    text-decoration: none;
+    border: 2px solid transparent;
+    font-weight: bold;
+    padding: 10px 25px; 
+    border-radius: 30px;
+    transition: background-color 1s, 
+        color 1s; 
+}
+
+.button:hover{
+    background-color: white;
+    color: gray; 
+}
+
+.TheProcess{
+    background: #454545;
+    width: 100%;
+    padding: 300px 0px; 
+}
+
+.title h2{
+    color: white;
+    font-size: 75px;
+    width: 1130px; 
+    margin: 30px auto;
+    text-align: center;
+}
+
+.box{
+    display: flex; 
     justify-content: center;
+    align-items: center;
+    min-height: 400px;
+}
+
+.box img{
+    height: 200px;
+    width: 200px;
+    position: relative;
+}
+
+.shape{
+    height: 365px;
+    width: 335px;
+    padding: 20px 35px; 
+    background: rgb(103, 97, 97);
+    border-radius: 20px;
+    margin: 15px;
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+}
+
+.shape h5{
+    color: black; 
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.desc p{
+    color: white; 
+    font-size: 16px;
+    line-height: 27px;
+    margin-bottom: 25px;
+}
+
+.end p{
+    color: white;
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 25px;
+}
+
+.end{
+    background-color: black;
+}
+
+footer{
+    position: relative;
+    width: 100%;
+    height: 250px;
+    background: rgb(120, 31, 31);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+footer p{
+    font-size: 30px;
+    color: white;
+    margin-bottom: 20px;
+    font-weight: bond;
+}
+@keyframes slideInLeft {
+    from{
+        transform: translateX(-300px);
+    }
+
+    to{
+        transform: translateX(0);
+    }
 }
